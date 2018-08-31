@@ -1,0 +1,44 @@
+{
+  "name": "ts-sorter",
+  "version": "1.0.0",
+  "description": "# ts-sorter",
+  "main": "index.ts",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "build": "npm run build-types && npm run build-js",
+    "build-types": "tsc --emitDeclarationOnly",
+    "build-js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "bundle": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABenassi87/ts-sorter.git"
+  },
+  "keywords": [
+    "sorting",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Alfredo Benassi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABenassi87/ts-sorter/issues"
+  },
+  "homepage": "https://github.com/ABenassi87/ts-sorter#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "prettier": "^1.14.2",
+    "ts-loader": "^4.5.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.10.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
